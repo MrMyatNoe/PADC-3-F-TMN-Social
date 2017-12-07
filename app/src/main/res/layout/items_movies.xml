@@ -72,15 +72,20 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_title"
                         android:layout_gravity="start"
-                        android:text="Drama, Thriller, Horror"
-                        android:textColor="@color/colorPrimary" />
+                        android:paddingTop="8dp"
+                        android:text="(Drama, Thriller, Horror)"
+                        android:textColor="@color/primaryText"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
 
                     <TextView
                         android:id="@+id/tv_currency"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_type"
-                        android:text="@string/current_popularity" />
+                        android:paddingTop="8dp"
+                        android:text="@string/current_popularity"
+                        android:textSize="14sp"/>
 
                     <ImageView
                         android:id="@+id/img_star_one"
@@ -199,15 +204,20 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_title_two"
                         android:layout_gravity="start"
-                        android:text="Action, Thriller, Science Fiction, Mystery"
-                        android:textColor="@color/colorPrimary" />
+                        android:paddingTop="8dp"
+                        android:text="(Action, Thriller, Science Fiction, Mystery)"
+                        android:textColor="@color/primaryText"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
 
                     <TextView
                         android:id="@+id/tv_currency_two"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_type_two"
-                        android:text="@string/current_popularity" />
+                        android:paddingTop="8dp"
+                        android:text="@string/current_popularity"
+                        android:textSize="14sp"/>
 
                     <ImageView
                         android:id="@+id/img_star_six"
@@ -326,15 +336,20 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_title_three"
                         android:layout_gravity="start"
-                        android:text="Adventure, Fantasy, Action, Science Fiction"
-                        android:textColor="@color/colorPrimary" />
+                        android:paddingTop="8dp"
+                        android:text="(Adventure, Fantasy, Action, Science Fiction)"
+                        android:textColor="@color/primaryText"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
 
                     <TextView
                         android:id="@+id/tv_currency_three"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_type_three"
-                        android:text="@string/current_popularity" />
+                        android:paddingTop="8dp"
+                        android:text="@string/current_popularity"
+                        android:textSize="14sp"/>
 
                     <ImageView
                         android:id="@+id/img_star_eleven"
