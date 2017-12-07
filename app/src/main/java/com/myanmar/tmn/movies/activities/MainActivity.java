@@ -1,4 +1,4 @@
-package com.myanmar.tmn.social.activities;
+package com.myanmar.tmn.movies.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.myanmar.tmn.social.R;
-import com.myanmar.tmn.social.adapter.SocialAdapter;
+import com.myanmar.tmn.movies.R;
+import com.myanmar.tmn.movies.adapter.MoviesAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.fab)
     FloatingActionButton fab;
 
-    private SocialAdapter socialAdapter;
+    private MoviesAdapter moviesAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this,this);
         setSupportActionBar(toolbar);
 
-        socialAdapter = new SocialAdapter();
+        moviesAdapter = new MoviesAdapter();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.VERTICAL,false);
         post.setLayoutManager(linearLayoutManager);
-        post.setAdapter(socialAdapter);
+        post.setAdapter(moviesAdapter);
     }
 
     @Override
