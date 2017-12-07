@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_one"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ii"
+                    android:fitsSystemWindows="true"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_title"
+                        android:layout_gravity="start"
+                        android:text="Drama, Thriller, Horror"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_type"
+                        android:text="Currency" />
+
+                    <ImageView
+                        android:id="@+id/img_star_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency"
+                        android:layout_toRightOf="@id/img_star_one"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency"
+                        android:layout_toRightOf="@id/img_star_two"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency"
+                        android:layout_toRightOf="@id/img_star_three"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency"
+                        android:layout_toRightOf="@id/img_star_four"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <Button
+                        android:id="@+id/btn_detail_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        android:padding="4dp"
+                        android:text="@string/movie_overview"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_two"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_one"
+            android:layout_margin="4dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/blade"
+                    android:fitsSystemWindows="true"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_title_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blade Runner"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_type_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_title_two"
+                        android:layout_gravity="start"
+                        android:text="Action, Thriller, Science, Mystery, Fiction"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_currency_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_type_two"
+                        android:text="Currency" />
+
+                    <ImageView
+                        android:id="@+id/img_star_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_two"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_two"
+                        android:layout_toRightOf="@id/img_star_six"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_two"
+                        android:layout_toRightOf="@id/img_star_seven"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_two"
+                        android:layout_toRightOf="@id/img_star_eight"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_ten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_two"
+                        android:layout_toRightOf="@id/img_star_nine"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <Button
+                        android:id="@+id/btn_detail_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        android:padding="4dp"
+                        android:text="@string/movie_overview"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_three"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_two"
+            android:layout_margin="4dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/three"
+                    android:fitsSystemWindows="true"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_title_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_type_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_title_three"
+                        android:layout_gravity="start"
+                        android:text="Drama, Thriller, Horror"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_currency_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_type_three"
+                        android:text="Currency" />
+
+                    <ImageView
+                        android:id="@+id/img_star_eleven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_three"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_twelve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_three"
+                        android:layout_toRightOf="@id/img_star_eleven"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_thirteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_three"
+                        android:layout_toRightOf="@id/img_star_twelve"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_three"
+                        android:layout_toRightOf="@id/img_star_thirteen"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/img_star_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_currency_three"
+                        android:layout_toRightOf="@id/img_star_fourteen"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <Button
+                        android:id="@+id/btn_detail_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        android:padding="4dp"
+                        android:text="@string/movie_overview"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
