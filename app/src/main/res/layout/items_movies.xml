@@ -22,7 +22,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
                 android:background="@drawable/img_it">
 
                 <RelativeLayout
@@ -154,7 +153,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
                 android:background="@drawable/img_blade">
 
                 <RelativeLayout
@@ -286,7 +284,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
                 android:background="@drawable/img_thor">
 
                 <RelativeLayout
