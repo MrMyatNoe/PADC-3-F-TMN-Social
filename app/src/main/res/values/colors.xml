@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="primaryText">#000</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="star">#ffff5a</color>
 </resources>
 
