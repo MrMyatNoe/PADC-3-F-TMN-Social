@@ -17,7 +17,18 @@
             android:layout_height="180dp"
             android:src="@drawable/img_it"/>
 
-        <FrameLayout
+        <TextView
+            android:background="@drawable/ic_favorite_black_24dp"
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_it"
+            android:layout_alignTop="@id/img_it"
+            android:padding="8dp"
+            android:text="7.5"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+        <!--<FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp">
@@ -40,7 +51,7 @@
                 android:textColor="#fff"
                 android:textSize="14sp"
                 android:textAlignment="center" />
-        </FrameLayout>
+        </FrameLayout>-->
 
         <ImageView
             android:id="@+id/iv_fullscreen"
@@ -104,7 +115,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/btn_round_corners"
+            android:background="@drawable/btn_round_corners_radius_16dp"
             android:padding="16dp"
             android:text="@string/movie_overview"
             android:textColor="#fff"

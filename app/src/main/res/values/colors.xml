@@ -6,5 +6,7 @@
     <color name="primaryText">#000</color>
     <color name="icons">#FFFFFF</color>
     <color name="star">#ffff5a</color>
+    <color name="gray">#bdbdbd</color>
+    <color name="brown">#3e2723</color>
 </resources>
 

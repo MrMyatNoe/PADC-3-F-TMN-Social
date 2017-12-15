@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.myanmar.tmn.movies.R;
+import com.myanmar.tmn.movies.adapter.GenreAdapter;
 import com.myanmar.tmn.movies.adapter.MoviesAdapter;
 
 import butterknife.BindView;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab;
 
     private MoviesAdapter moviesAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
