@@ -13,7 +13,7 @@
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="290dp"
+            android:layout_height="300dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             android:fitsSystemWindows="true">
 
@@ -109,11 +109,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_below="@id/ratingBar"
                     android:text="Released : June 2017"
                     android:textColor="@color/icons"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </RelativeLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -138,15 +138,17 @@
         <RelativeLayout
             android:id="@+id/rl_main_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:background="@color/gray"
+                android:background="@color/colorPrimaryDark"
                 android:id="@+id/tv_movie_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="X-men : Apocalypse" />
+                android:textSize="18sp"
+                android:text="X-men : Apocalypse"
+                android:textColor="@color/icons" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_movie_genre"
@@ -165,7 +167,7 @@
                 android:layout_marginTop="8dp"
                 android:text="2h 30 mins"
                 android:textColor="#000"
-                android:padding="4dp"
+                android:padding="8dp"
                 android:background="@drawable/btn_round_corners_radius_16dp"/>
 
             <android.support.v7.widget.RecyclerView
@@ -183,6 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rv_movie_image"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/tv_review"
                 android:textColor="@color/icons" />
 
@@ -192,8 +195,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_review"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="@string/tv_review_summary"
-                android:textColor="@color/icons"/>
+                android:textColor="@color/icons"
+                android:lineSpacingMultiplier="1.2"/>
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 

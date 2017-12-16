@@ -16,18 +16,18 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
             android:text="Drama"
+            android:padding="4dp"
             android:textColor="#000"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:background="@drawable/btn_round_corners_radius_8dp"/>
 
-        <TextView
-            android:id="@+id/tv_movie_genre_stick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
+        <View
+            android:background="#fff"
+            android:id="@+id/h_separator"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
-            android:layout_toRightOf="@id/tv_movie_genre"
-            android:text=" | "
-            android:textColor="#000" />
+            android:layout_toRightOf="@id/tv_movie_genre"/>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

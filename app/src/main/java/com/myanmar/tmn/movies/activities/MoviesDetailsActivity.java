@@ -35,7 +35,7 @@ public class MoviesDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.items_movies_details);
+        setContentView(R.layout.activity_movies_details);
         ButterKnife.bind(this,this);
 
         genreAdapter = new GenreAdapter();
