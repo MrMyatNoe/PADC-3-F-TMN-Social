@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.myanmar.tmn.movies.R;
 import com.myanmar.tmn.movies.adapter.GenreAdapter;
 import com.myanmar.tmn.movies.adapter.ItemsDetailsAdapter;
+import com.myanmar.tmn.movies.adapter.MoviesReviewSummaryAdpater;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,6 +25,8 @@ public class MoviesDetailsActivity extends AppCompatActivity {
 
     /*@BindView(R.id.vp_movies_trailer_images)
     ViewPager vpMoviesTrailerImages;*/
+    @BindView(R.id.rv_review_summary)
+    RecyclerView rvSummary;
 
     @BindView(R.id.rv_movie_image)
     RecyclerView rvMovieImage;
@@ -32,6 +35,8 @@ public class MoviesDetailsActivity extends AppCompatActivity {
 
     private ItemsDetailsAdapter itemsDetailsAdapter;
 
+    private MoviesReviewSummaryAdpater moviesReviewSummaryAdpater;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,15 +44,21 @@ public class MoviesDetailsActivity extends AppCompatActivity {
         ButterKnife.bind(this,this);
 
         genreAdapter = new GenreAdapter();
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(),
+        LinearLayoutManager genreManager = new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.HORIZONTAL,false);
-        genre.setLayoutManager(linearLayoutManager);
+        genre.setLayoutManager(genreManager);
         genre.setAdapter(genreAdapter);
 
         itemsDetailsAdapter = new ItemsDetailsAdapter();
-        LinearLayoutManager linearLayoutManagerOne = new LinearLayoutManager(getApplicationContext(),
+        LinearLayoutManager detailsManager = new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.HORIZONTAL,false);
-        rvMovieImage.setLayoutManager(linearLayoutManagerOne);
+        rvMovieImage.setLayoutManager(detailsManager);
         rvMovieImage.setAdapter(itemsDetailsAdapter);
+
+        moviesReviewSummaryAdpater = new MoviesReviewSummaryAdpater();
+        LinearLayoutManager summaryLayoutManager = new LinearLayoutManager(getApplicationContext(),
+                LinearLayoutManager.VERTICAL,false);
+        rvSummary.setLayoutManager(summaryLayoutManager);
+        rvSummary.setAdapter(moviesReviewSummaryAdpater);
     }
 }

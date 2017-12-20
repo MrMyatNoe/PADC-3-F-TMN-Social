@@ -38,8 +38,8 @@
 
                     <ImageView
                         android:id="@+id/img_it"
-                        android:layout_width="150dp"
-                        android:layout_height="220dp"
+                        android:layout_width="@dimen/movie_poster_width"
+                        android:layout_height="@dimen/movie_poster_height"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="8dp"
                         android:layout_gravity="center"
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/fl_movie_poster"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/movie_poster_right_distance"
                     android:layout_marginTop="16dp"
                     android:text="Fear that can you hold"
                     android:textColor="@color/icons"
@@ -81,7 +81,7 @@
                     android:layout_height="140dp"
                     android:layout_toRightOf="@id/fl_movie_poster"
                     android:layout_below="@id/tv_title"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/movie_poster_right_distance"
                     android:layout_marginRight="4dp" >
 
                     <TextView
@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/fl_movie_poster"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/movie_poster_right_distance"
                     style="?android:attr/ratingBarStyleIndicator"
                     android:numStars="15"
                     android:rating="15" />
@@ -108,7 +108,7 @@
                     android:id="@+id/released_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/movie_poster_right_distance"
                     android:layout_marginBottom="4dp"
                     android:layout_below="@id/ratingBar"
                     android:text="Released : June 2017"
@@ -189,7 +189,7 @@
                 android:text="@string/tv_review"
                 android:textColor="@color/icons" />
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/tv_review_summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -199,7 +199,18 @@
                 android:layout_marginBottom="8dp"
                 android:text="@string/tv_review_summary"
                 android:textColor="@color/icons"
-                android:lineSpacingMultiplier="1.2"/>
+                android:lineSpacingMultiplier="1.2"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_review_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_review"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp">
+
+            </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 

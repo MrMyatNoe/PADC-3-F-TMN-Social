@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="movie_poster_width">150dp</dimen>
+    <dimen name="movie_poster_height">220dp</dimen>
+    <dimen name="movie_poster_right_distance">8dp</dimen>
+</resources>

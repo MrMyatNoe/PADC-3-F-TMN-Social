@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.myanmar.tmn.movies.R;
-import com.myanmar.tmn.movies.viewHolder.ItemsViewHolder;
+import com.myanmar.tmn.movies.delegates.MoviesActionDelegates;
+import com.myanmar.tmn.movies.viewHolder.ItemsMoviesViewHolder;
 
 /**
  * Created by msi on 12/6/2017.
@@ -15,13 +16,19 @@ import com.myanmar.tmn.movies.viewHolder.ItemsViewHolder;
 
 public class MoviesAdapter extends RecyclerView.Adapter {
 
+    private MoviesActionDelegates moviesActionDelegates;
+
+    public MoviesAdapter(MoviesActionDelegates moviesActionDelegates) {
+        this.moviesActionDelegates = moviesActionDelegates;
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View newsItems = inflater.inflate(R.layout.items_movies,parent,false);
-        ItemsViewHolder itemNewsViewHolder = new ItemsViewHolder(newsItems);
+        ItemsMoviesViewHolder itemNewsViewHolder = new ItemsMoviesViewHolder(newsItems, moviesActionDelegates);
         return itemNewsViewHolder;
     }
 

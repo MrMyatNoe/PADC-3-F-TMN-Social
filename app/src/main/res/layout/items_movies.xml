@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    android:id="@+id/cv_movies_items_root">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,8 +15,8 @@
         <ImageView
             android:id="@+id/img_it"
             android:layout_width="120dp"
-            android:layout_height="180dp"
-            android:src="@drawable/img_it"/>
+            android:layout_height="200dp"
+            android:src="@drawable/xmen"/>
 
         <TextView
             android:background="@drawable/ic_favorite_black_24dp"
@@ -67,9 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/img_it"
             android:layout_marginLeft="8dp"
-            android:text="It"
+            android:text="X-MEN:Day of future past"
             android:textColor="@color/colorPrimary"
-            android:textSize="28sp"/>
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/tv_type"
@@ -79,7 +80,7 @@
             android:layout_gravity="start"
             android:layout_toRightOf="@id/img_it"
             android:layout_alignLeft="@id/tv_title"
-            android:text="(Drama, Thriller, Horror)"
+            android:text="(Action, Thriller, Science Fiction, Mystery)"
             android:layout_marginTop="8dp"
             android:textColor="@color/primaryText"
             android:textStyle="bold"
@@ -114,7 +115,7 @@
             android:layout_alignBottom="@id/img_it"
             android:layout_alignParentRight="true"
             android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/btn_round_corners_radius_16dp"
             android:padding="16dp"
             android:text="@string/movie_overview"
