@@ -7,23 +7,31 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.myanmar.tmn.movies.R;
+import com.myanmar.tmn.movies.data.vo.MoviesVO;
 import com.myanmar.tmn.movies.delegates.MoviesActionDelegates;
 import com.myanmar.tmn.movies.viewHolder.ItemsMoviesViewHolder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by msi on 12/6/2017.
  */
 
-public class MoviesAdapter extends RecyclerView.Adapter {
+public class MoviesAdapter extends RecyclerView.Adapter<ItemsMoviesViewHolder> {
 
     private MoviesActionDelegates moviesActionDelegates;
 
+    //To show data dynamically
+    private List<MoviesVO> moviesList;
+
     public MoviesAdapter(MoviesActionDelegates moviesActionDelegates) {
         this.moviesActionDelegates = moviesActionDelegates;
+        moviesList = new ArrayList<>();
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ItemsMoviesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
@@ -33,12 +41,18 @@ public class MoviesAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
+    public void onBindViewHolder(ItemsMoviesViewHolder holder, int position) {
+        holder.setMovies(moviesList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 8;
+        return moviesList.size();
+    }
+
+    public void setMoviesList(List<MoviesVO> moviesList) {
+        this.moviesList = moviesList;
+        //if data is added to adapter view, set this method
+        notifyDataSetChanged();
     }
 }
