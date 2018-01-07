@@ -58,15 +58,16 @@ public class ItemsMoviesViewHolder extends RecyclerView.ViewHolder {
         tvRating.setText(String.valueOf(movies.getVoteAverage()));
         movieRating.setRating(Float.parseFloat(String.valueOf(movies.getVoteAverage())));
 
-        Glide.with(imagePoster.getContext()).load(movies.getPosterPath()).into(imagePoster);
+        Glide.with(imagePoster.getContext()).load("http://image.tmdb.org/t/p/original"
+                + movies.getPosterPath()).into(imagePoster);
 
-        if (movies.getPosterPath() != null) {
+        /*if (movies.getPosterPath() != null) {
             imagePoster.setVisibility(View.VISIBLE);
             Glide.with(imagePoster.getContext())
                     .load(movies.getPosterPath())
                     .into(imagePoster);
         }else {
             imagePoster.setVisibility(View.GONE);
-        }
+        }*/
     }
 }
